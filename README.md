@@ -1,67 +1,33 @@
-﻿# Ejemplo de Patron MVC con Swing
+﻿# ðŸ¢ Ejemplo de PatrÃ³n MVC con Swing
 
-Proyecto de ejemplo que demuestra el patron MVC aplicado a una interfaz grafica con recursos humanos.
+Proyecto de ejemplo que demuestra el patrÃ³n **MVC** aplicado a una interfaz grÃ¡fica con gestiÃ³n de recursos humanos.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Swing (MVC) |
-| Archivos Java | 7 |
-| Version de Java | 25 |
-| Patron | Proyecto de ejemplo del patron MVC con Swing |
+- ImplementaciÃ³n del patrÃ³n MVC
+- Interfaz grÃ¡fica con Swing
+- GestiÃ³n de recursos humanos (ejemplo)
+- SeparaciÃ³n de vista, controlador y modelo
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- Separacion clara de modelo, vista y controlador
-- Dialogo de registro
-- Logica de negocio (RRHH)
-- Constantes centralizadas
+- Java + Swing
+- Maven
+- PatrÃ³n MVC
 
-## Estructura del proyecto
-
-```
-proyectoEjemploGUI/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/proyectoEjemploGUI.git
+cd proyectoEjemploGUI
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="AplMain"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.AplMain
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
